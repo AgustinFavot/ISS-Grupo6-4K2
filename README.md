@@ -6,3 +6,4 @@ Integrantes:
 - Mari Baltazar, 400231
 - Alejandro Rojas, 81310
 - Romero Agustin, 97069
+- Gomez Franco, 401531
