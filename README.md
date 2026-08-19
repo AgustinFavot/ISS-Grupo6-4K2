@@ -5,3 +5,4 @@ Integrantes:
 - Caudana Franco, 90277
 - Mari Baltazar, 400231
 - Alejandro Rojas, 81310
+- Romero Agustin, 97069
