@@ -8,3 +8,4 @@ Integrantes:
 - Romero Agustin, 97069
 - Gomez Franco, 401531
 - Marin Leon, 400517
+- Amor Ignacio, 89507
