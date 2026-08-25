@@ -1,95 +1,110 @@
-# ISS-Grupo6-4K2
-Ingeniería y Calidad de Software
+# Estructura del Repositorio
 
-**Índice del repositorio**
+- **README.md**
+  - **#** propósito del proyecto y guía del repo
 
-README.md
-# propósito del proyecto y guía del repo
+## 00_Configuración/
+- **Plan_Configuración_v1.0.md**
+  - **#** Documento maestro de SCM; versionado por ser línea base en sí mismo
+- **Estándares/**
+  - *convenciones-nombres.md*
+    - **#** Convenciones en lenguaje natural, para lectura humana
+    - **#** Regla de nombrado de archivos y carpetas
+  - *convenciones-commits.md*
+    - **#** Formato acordado para mensajes de commit
+  - *convenciones-ramas.md*
+    - **#** Criterio de creación y nombrado de ramas
+- **Configuración_Extra/**
+  - **#** Reservada para ítems futuros (e.g., imágenes de config de ramas, config de bots de cambios)
 
-00_Configuración/
-   - Plan_Configuración_v1.0.md
-   - Estándares/
-      - convenciones-nombres.md 
-      - convenciones-commits.md 
-      - convenciones-ramas.md
-   - Configuración_Extra/
-   # Documento maestro de SCM; versionado por ser línea base en sí mismo
-   # Convenciones en lenguaje natural, para lectura humana
-   # Regla de nombrado de archivos y carpetas
-   # Formato acordado para mensajes de commit
-   # Criterio de creación y nombrado de ramas
-   # Reservada para ítems futuros (e.g., imágenes de config de ramas, config de bots de cambios)
+---
 
-.gitignore
-   # Define qué no se versiona
+## .gitignore
+- **#** Define qué no se versiona
 
-.github/
-   workflows/
-      naming-check.yml
-   config/
-      naming-rules.yml
-      branch-rules.yml
-   # Automatizaciones de CI
-   # Valida nombrado y ramas en cada push/PR
-   # Centraliza reglas que los workflows van a leer (YAML)
-   # Reglas de nombrado de archivos
-   # Reglas de ramas
+---
 
-01_Administrativo/
-   Integrantes.md
-   Roles.md
-   # Gestión del equipo
-   # Datos de contacto de cada integrante
-   # Rol de cada integrante en el equipo
+## .github/
+- **workflows/**
+  - *naming-check.yml*
+    - **#** Automatizaciones de CI
+    - **#** Valida nombrado y ramas en cada push/PR
+- **config/**
+  - *naming-rules.yml*
+    - **#** Centraliza reglas que los workflows van a leer (YAML)
+    - **#** Reglas de nombrado de archivos
+  - *branch-rules.yml*
+    - **#** Reglas de ramas
 
-02_TP/
-   GuiaTP_Evaluables.pdf
-   TIG/
-      TIG_[nro]_[Nombre]/
-         Minutas/
-   TPG/
-      TPG_[nro]_[Nombre]/
-         Minutas/
-   # Productos evaluables del cursado
-   # Consigna original, conservada como referencia
-   # Una carpeta por Trabajo de Investigación Grupal
-   # Historial de avance de esa entrega
-   # Una carpeta por Trabajo Práctico Grupal
+---
 
-03_Material_Estudio/
-   Casos_Estudio/
-      Casos_Estudio_Resueltos.pdf
-      Casos_Estudio_Intensivo.pdf
-   Modelos_Evaluación/
-   # Todo lo provisto por la cátedra (no autoría propia)
-   # Material de práctica entregado por la cátedra
-   # Ejemplos de parcial/final, tomados o no
+## 01_Administrativo/
+- *Integrantes.md*
+  - **#** Gestión del equipo
+  - **#** Datos de contacto de cada integrante
+- *Roles.md*
+  - **#** Rol de cada integrante en el equipo
 
-04_Notas_Equipo/
-   Resumenes/
-   Anotaciones/
-   # Todo lo redactado por el equipo (autoría propia)
-   # Contenido ya elaborado y sintetizado
-   # Notas de clase más crudas, tomadas al momento
+---
 
-05_Bibliografía/
-   Enlaces_Utiles.md
-   Material_Externo/
-      SCM/
-      Ing_Sfw/
-   # Material externo de referencia/consulta
-   # Lista curada de recursos web
-   # Libros y papers no clasificados por unidad
-   # Bibliografía específica de SCM
-   # Bibliografía específica de Ingeniería de Software
+## 02_TP/
+- *GuiaTP_Evaluables.pdf*
+  - **#** Productos evaluables del cursado
+  - **#** Consigna original, conservada como referencia
+- **TIG/**
+  - **TIG_[nro]_[Nombre]/**
+    - **Minutas/**
+      - **#** Una carpeta por Trabajo de Investigación Grupal
+      - **#** Historial de avance de esa entrega
+- **TPG/**
+  - **TPG_[nro]_[Nombre]/**
+    - **Minutas/**
+      - **#** Una carpeta por Trabajo Práctico Grupal
 
-06_Cátedra/
-   Normas_Academica.md
-   Cronograma.md
-   Condiciones_Promocion.md
-   Contacto_Docentes.md
-   # Información institucional
-   # Condiciones generales fijadas por la cátedra
-   # Fechas clave de entregas y exámenes
-   # Requisitos para promocionar
-   # Vía de contacto con la cátedra
+---
+
+## 03_Material_Estudio/
+- **Casos_Estudio/**
+  - *Casos_Estudio_Resueltos.pdf*
+    - **#** Todo lo provisto por la cátedra (no autoría propia)
+    - **#** Material de práctica entregado por la cátedra
+  - *Casos_Estudio_Intensivo.pdf*
+- **Modelos_Evaluación/**
+  - **#** Ejemplos de parcial/final, tomados o no
+
+---
+
+## 04_Notas_Equipo/
+- **Resumenes/**
+  - **#** Todo lo redactado por el equipo (autoría propia)
+  - **#** Contenido ya elaborado y sintetizado
+- **Anotaciones/**
+  - **#** Notas de clase más crudas, tomadas al momento
+
+---
+
+## 05_Bibliografía/
+- *Enlaces_Utiles.md*
+  - **#** Material externo de referencia/consulta
+  - **#** Lista curada de recursos web
+- **Material_Externo/**
+  - **SCM/**
+  - **Ing_Sfw/**
+  - **Testing_Sfw/**
+  - **TDD/**
+  - **Agilismo/**
+  - **Lean y Kanban/**
+  - **#** Libros y papers clasificados por tema y no clasificados
+
+---
+
+## 06_Cátedra/
+- *Normas_Académica.md*
+  - **#** Información institucional
+  - **#** Condiciones generales fijadas por la cátedra
+- *Cronograma.md*
+  - **#** Fechas clave de entregas y exámenes
+- *Condiciones_de_Promocion.md*
+  - **#** Requisitos para promocionar
+- *Contacto_Docentes.md*
+  - **#** Vía de contacto con la cátedra
