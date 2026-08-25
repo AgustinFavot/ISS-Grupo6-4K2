@@ -1,0 +1,116 @@
+name: Telegram PR Notifications
+
+on:
+  pull_request:
+    types:
+      - opened
+
+permissions:
+  contents: read
+  pull-requests: read
+
+jobs:
+  notify-telegram:
+    name: Send PR notification to Telegram
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Build notification
+        id: notification
+        shell: bash
+        env:
+          REPOSITORY: ${{ github.repository }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          PR_TITLE: ${{ github.event.pull_request.title }}
+          PR_AUTHOR: ${{ github.event.pull_request.user.login }}
+          PR_URL: ${{ github.event.pull_request.html_url }}
+          SOURCE_BRANCH: ${{ github.event.pull_request.head.ref }}
+          TARGET_BRANCH: ${{ github.event.pull_request.base.ref }}
+
+        run: |
+          set -e
+
+          ICON="🆕"
+          TITLE="Nuevo Pull Request"
+
+          # Escapar caracteres especiales para MarkdownV2
+          escape_markdown() {
+            printf '%s' "$1" | sed \
+              -e 's/\\/\\\\/g' \
+              -e 's/_/\\_/g' \
+              -e 's/\*/\\*/g' \
+              -e 's/\[/\\[/g' \
+              -e 's/\]/\\]/g' \
+              -e 's/(/\\(/g' \
+              -e 's/)/\\)/g' \
+              -e 's/~/\\~/g' \
+              -e 's/`/\\`/g' \
+              -e 's/>/\\>/g' \
+              -e 's/#/\\#/g' \
+              -e 's/+/\\+/g' \
+              -e 's/-/\\-/g' \
+              -e 's/=/\\=/g' \
+              -e 's/|/\\|/g' \
+              -e 's/{/\\{/g' \
+              -e 's/}/\\}/g' \
+              -e 's/\\./\\./g' \
+              -e 's/!/\\!/g'
+          }
+
+          REPOSITORY_ESCAPED=$(escape_markdown "${REPOSITORY}")
+          PR_TITLE_ESCAPED=$(escape_markdown "${PR_TITLE}")
+          PR_AUTHOR_ESCAPED=$(escape_markdown "${PR_AUTHOR}")
+          SOURCE_BRANCH_ESCAPED=$(escape_markdown "${SOURCE_BRANCH}")
+          TARGET_BRANCH_ESCAPED=$(escape_markdown "${TARGET_BRANCH}")
+
+          MESSAGE="${ICON} *${TITLE}*
+
+          📦 *Repositorio:* \`${REPOSITORY_ESCAPED}\`
+
+          🔀 *PR:* \#${PR_NUMBER}
+          📝 *Título:* ${PR_TITLE_ESCAPED}
+
+          👤 *Autor:* ${PR_AUTHOR_ESCAPED}
+
+          🌿 *Origen:* \`${SOURCE_BRANCH_ESCAPED}\`
+          🎯 *Destino:* \`${TARGET_BRANCH_ESCAPED}\`
+
+          🔗 [Ver Pull Request](${PR_URL})"
+
+          {
+            echo "message<<EOF"
+            echo "${MESSAGE}"
+            echo "EOF"
+          } >> "${GITHUB_OUTPUT}"
+
+      - name: Send notification to Telegram
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          MESSAGE: ${{ steps.notification.outputs.message }}
+        shell: bash
+        run: |
+          set -e
+
+          if [ -z "${TELEGRAM_BOT_TOKEN}" ]; then
+            echo "ERROR: TELEGRAM_BOT_TOKEN is not configured."
+            exit 1
+          fi
+
+          if [ -z "${TELEGRAM_CHAT_ID}" ]; then
+            echo "ERROR: TELEGRAM_CHAT_ID is not configured."
+            exit 1
+          fi
+
+          RESPONSE=$(curl \
+            --silent \
+            --show-error \
+            --fail \
+            --request POST \
+            "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
+            --data-urlencode "chat_id=${TELEGRAM_CHAT_ID}" \
+            --data-urlencode "text=${MESSAGE}" \
+            --data-urlencode "parse_mode=MarkdownV2")
+
+          echo "Telegram notification sent successfully."
+          echo "${RESPONSE}"
