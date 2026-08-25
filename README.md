@@ -109,5 +109,6 @@
 - *Condiciones_Promocion.md*
   - **#** Requisitos para promocionar
 - *Contacto_Docentes.md*
-  - **#** Vía de contacto con la cátedra
+  - **#** Vía de contacto con la cátedra.
+
 
