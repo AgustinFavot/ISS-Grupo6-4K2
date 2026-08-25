@@ -6,6 +6,8 @@
 ## 00_Configuración/
 - **Plan_Configuración_v1.0.md**
   - **#** Documento maestro de SCM; versionado por ser línea base en sí mismo
+- **Matriz_Trazabilidad_v1.0.md**
+  - **#** Matriz de trazabilidad de los ítems de configuración del repositorio
 - **Estándares/**
   - *convenciones-nombres.md*
     - **#** Convenciones en lenguaje natural, para lectura humana
@@ -69,7 +71,7 @@
     - **#** Todo lo provisto por la cátedra (no autoría propia)
     - **#** Material de práctica entregado por la cátedra
   - *Casos_Estudio_Intensivo.pdf*
-- **Modelos_Evaluación/**
+- **Modelos_Evaluacion/**
   - **#** Ejemplos de parcial/final, tomados o no
 
 ---
@@ -93,7 +95,7 @@
   - **Testing_Sfw/**
   - **TDD/**
   - **Agilismo/**
-  - **Lean y Kanban/**
+  - **Lean_Kanban/**
   - **#** Libros y papers clasificados por tema y no clasificados
 
 ---
@@ -104,7 +106,7 @@
   - **#** Condiciones generales fijadas por la cátedra
 - *Cronograma.md*
   - **#** Fechas clave de entregas y exámenes
-- *Condiciones_de_Promocion.md*
+- *Condiciones_Promocion.md*
   - **#** Requisitos para promocionar
 - *Contacto_Docentes.md*
   - **#** Vía de contacto con la cátedra
