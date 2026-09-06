@@ -1,1 +1,10 @@
-ARCHIVO BASE A COMPLETAR
+- Amor, Ignacio Legajo: 89507
+- Caudana , Franco Legajo: 90277
+- Favot, Agustin Legajo: 80245
+- Ferraro, Ayelen Legajo: 99149
+- Gomez , Franco Legajo: 401531
+- Marín , León Legajo: 400517
+- Mari , Baltazar Legajo: 400231
+- Rocamora, Ricardo Legajo: 94122
+- Rojas, Alejandro Legajo: 81310
+- Romero, David Legajo: 97069
