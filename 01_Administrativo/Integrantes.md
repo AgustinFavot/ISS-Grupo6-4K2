@@ -1,10 +1,11 @@
-- Amor, Ignacio Legajo: 89507
-- Caudana , Franco Legajo: 90277
-- Favot, Agustin Legajo: 80245
-- Ferraro, Ayelen Legajo: 99149
-- Gomez , Franco Legajo: 401531
-- Marín , León Legajo: 400517
-- Mari , Baltazar Legajo: 400231
-- Rocamora, Ricardo Legajo: 94122
-- Rojas, Alejandro Legajo: 81310
-- Romero, David Legajo: 97069
+# Integrantes del Grupo 6 – 4K2
+
+**Materia:** Ingeniería y Calidad de Software | **Comisión:** 4K2 | **Año:** 2026
+
+| Nombre y Apellido | Legajo |    Correo de contacto   |
+|-------------------|--------|-------------------------|
+| Agustin Favot     | 80245  | agustin.favot@gmail.com |
+| [Integrante 2] | — | — | — |
+| [Integrante 3] | — | — | — |
+| [Integrante 4] | — | — | — |
+| [Integrante 5] | — | — | — |
