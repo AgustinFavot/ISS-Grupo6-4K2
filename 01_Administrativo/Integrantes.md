@@ -5,7 +5,7 @@
 | Nombre y Apellido | Legajo |    Correo de contacto   |
 |-------------------|--------|-------------------------|
 | Agustin Favot     | 80245  | agustin.favot@gmail.com |
-| [Integrante 2] | — | — | — |
+| Leon Marin        | 400517 | leonmarinfont@gmail.com |
 | [Integrante 3] | — | — | — |
 | [Integrante 4] | — | — | — |
 | [Integrante 5] | — | — | — |
