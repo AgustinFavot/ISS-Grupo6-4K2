@@ -2,10 +2,10 @@
 
 **Materia:** Ingeniería y Calidad de Software | **Comisión:** 4K2 | **Año:** 2026
 
-| Nombre y Apellido | Legajo |    Correo de contacto   |
-|-------------------|--------|-------------------------|
-| Agustin Favot     | 80245  | agustin.favot@gmail.com |
-| Leon Marin        | 400517 | leonmarinfont@gmail.com |
-| [Integrante 3] | — | — | — |
+| Nombre y Apellido | Legajo |    Correo de contacto            |
+|-------------------|--------|----------------------------------|
+| Agustin Favot     | 80245  | agustin.favot@gmail.com          |
+| Leon Marin        | 400517 | leonmarinfont@gmail.com          |
+| Romero Agustin    | 97069  | Romeroagustin45680910@gmail.com  |
 | [Integrante 4] | — | — | — |
 | [Integrante 5] | — | — | — |
