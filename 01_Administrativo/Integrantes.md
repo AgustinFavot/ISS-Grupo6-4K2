@@ -6,6 +6,6 @@
 |-------------------|--------|-------------------------|
 | Agustin Favot     | 80245  | agustin.favot@gmail.com |
 | Leon Marin        | 400517 | leonmarinfont@gmail.com |
-| [Integrante 3] | — | — | — |
-| [Integrante 4] | — | — | — |
-| [Integrante 5] | — | — | — |
+| Franco Caudana    | 90277  | francocaudanautn@gmail.com |
+| — | — | — |
+| — | — | — |
