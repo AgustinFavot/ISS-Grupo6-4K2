@@ -41,65 +41,66 @@ La estructura siguiente organiza todos los IC del repositorio. Todo archivo pres
 ```
 ISS-Grupo6-4K2/
 │
-├── README.md                                   # IC-01
-├── .gitignore                                  # IC-06
+├── README.md                                                           # IC-01
+├── .gitignore                                                          # IC-06
 │
 ├── .github/
-│   └── workflows/                             # IC-07
+│   └── workflows/                                                      # IC-07
 │
 ├── 00_Configuración/
-│   ├── Plan_Configuracion_v[X].[Y].md         # IC-02
-│   ├── Matriz_Trazabilidad_v[X].[Y].md        # IC-03
+│   ├── Plan_Configuracion_v[X].[Y].md                                  # IC-02
+│   ├── Matriz_Trazabilidad_v[X].[Y].md                                 # IC-03
 │   ├── Estandares/
-│   │   ├── convenciones-nombres.md            # IC-04a
-│   │   ├── convenciones-commits.md            # IC-04b
-│   │   └── convenciones-ramas.md             # IC-04c
-│   └── Configuracion_Extra/                   # IC-05 (libre)
+│   │   ├── convenciones-nombres.md                                     # IC-04a
+│   │   ├── convenciones-commits.md                                     # IC-04b
+│   │   └── convenciones-ramas.md                                       # IC-04c
+│   └── Configuracion_Extra/                                            # IC-05 (libre)
 │
 ├── 01_Administrativo/
-│   ├── Integrantes.md                         # IC-08
-│   └── Roles.md                              # IC-09
+│   ├── Integrantes.md                                                  # IC-08
+│   └── Roles.md                                                        # IC-09
 │
 ├── 02_TP/
-│   ├── guiatp_evaluables.pdf                  # IC-10
+│   ├── GuiaTP_Evaluables.pdf                                           # IC-10
+│   ├── ISW_Lineamientos para trabajos de investigación 2026 2C.pdf     # IC-29
 │   ├── TIG/
 │   │   └── TIG_[nro]_[Nombre]/
-│   │       ├── ti[nro]_isw_4k2_grupo6.[ext]  # IC-11
-│   │       ├── (anexos – libre)              # IC-12
+│   │       ├── ti[nro]_isw_4k2_grupo6.[ext]                            # IC-11
+│   │       ├── (anexos – libre)                                        # IC-12
 │   │       └── Minutas/
-│   │           └── minuta_AAAA-MM-DD.md      # IC-13
+│   │           └── minuta_AAAA-MM-DD.md                                # IC-13
 │   └── TPG/
 │       └── TPG_[nro]_[Nombre]/
-│           ├── tp[nro]_isw_4k2_grupo6.[ext]  # IC-14
-│           ├── (anexos – libre)              # IC-15
+│           ├── tp[nro]_isw_4k2_grupo6.[ext]                            # IC-14
+│           ├── (anexos – libre)                                        # IC-15
 │           └── Minutas/
-│               └── minuta_AAAA-MM-DD.md      # IC-16
+│               └── minuta_AAAA-MM-DD.md                                # IC-16
 │
 ├── 03_Material_Estudio/
 │   ├── Casos_Estudio/
-│   │   ├── casos_estudio_resueltos.pdf        # IC-17
-│   │   └── casos_estudio_intensivo.pdf        # IC-18
+│   │   ├── casos_estudio_resueltos.pdf                                 # IC-17
+│   │   └── casos_estudio_intensivo.pdf                                 # IC-18
 │   ├── Modelos_Evaluacion/
-│   │   └── modelo_[tipo]_[tema].pdf           # IC-19
+│   │   └── modelo_[tipo]_[tema].pdf                                    # IC-19
 │   └── Presentaciones/
-│       └── (nombre original de cátedra)       # IC-20
+│       └── (nombre original de cátedra)                                # IC-20
 │
 ├── 04_Notas_Equipo/
 │   ├── Resumenes/
-│   │   └── resumen_unidad[nro]_[tema].md      # IC-21
+│   │   └── resumen_unidad[nro]_[tema].md                               # IC-21
 │   └── Anotaciones/
-│       └── anotacion_AAAA-MM-DD_[tema].md     # IC-22
+│       └── anotacion_AAAA-MM-DD_[tema].md                              # IC-22
 │
 ├── 05_Bibliografia/
-│   ├── enlaces_utiles.md                      # IC-23
+│   ├── enlaces_utiles.md                                               # IC-23
 │   └── Material_Externo/
-│       └── (por tema: SCM/, Ing_Sfw/, etc.)  # IC-24
+│       └── (por tema: SCM/, Ing_Sfw/, etc.)                            # IC-24
 │
 └── 06_Catedra/
-    ├── modalidad_academica.md                 # IC-25
-    ├── cronograma.md                          # IC-26
-    ├── condiciones_promocion.md               # IC-27
-    └── contacto_docentes.md                  # IC-28
+    ├── modalidad_academica.md                                          # IC-25
+    ├── cronograma.md                                                   # IC-26
+    ├── condiciones_promocion.md                                        # IC-27
+    └── contacto_docentes.md                                            # IC-28
 ```
 
 ---
@@ -152,7 +153,8 @@ ISS-Grupo6-4K2/
 | IC-25 | Modalidad académica | MTR | `modalidad_academica.md` (fijo) | `/06_Catedra/` | Condiciones generales de cursado de la cátedra |
 | IC-26 | Cronograma | MTR | `cronograma.md` (fijo) | `/06_Catedra/` | Fechas clave: entregas, parciales y exámenes |
 | IC-27 | Condiciones de promoción | MTR | `condiciones_promocion.md` (fijo) | `/06_Catedra/` | Requisitos para promocionar la materia |
-| IC-28 | Contacto docentes | ADM | `contacto_docentes.md` (fijo) | `/06_Catedra/` | Datos de contacto de los docentes de la comisión |
+| IC-28 | Contacto docentes | ADM | `Contacto profes.png` (fijo) | `/06_Catedra/` | Datos de contacto de los docentes de la comisión |
+| IC-29 | Lineamientos del trabajo de investigacion grupal | MTR | RN-04 | `/02_TP/` | Consigna oficial de la cátedra, conservada como referencia |
 
 ---
 
