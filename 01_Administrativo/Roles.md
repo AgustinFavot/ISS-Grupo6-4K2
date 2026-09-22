@@ -7,7 +7,7 @@
 | Nombre y Apellido | Rol SCM           | Responsabilidad                                                                                      |
 |-------------------|-------------------|------------------------------------------------------------------------------------------------------|
 | Agustin Favot     | Administrador SCM | Mantenimiento del plan, creación de líneas base, aprobación de cambios estructurales                 |
-| [Integrante 2]    | Colaborador       | Carga de ICs, apertura de PRs, revisión de contenido                                                 |
+| Leon Marin        | Colaborador       | Carga de ICs, apertura de PRs, revisión de contenido                                                 |
 | [Integrante 3]    | Colaborador       | Carga de ICs, apertura de PRs, revisión de contenido                                                 |
 | [Integrante 4]    | Colaborador       | Carga de ICs, apertura de PRs, revisión de contenido                                                 |
 | [Integrante 5]    | Colaborador       | Carga de ICs, apertura de PRs, revisión de contenido                                                 |
