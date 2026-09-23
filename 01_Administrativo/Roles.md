@@ -12,6 +12,7 @@
 |  Alejandro Rojas  |    Colaborador    |                         Carga de ICs, apertura de PRs, revisión de contenido                         |
 |  Baltazar Mari    |    Colaborador    |                         Carga de ICs, apertura de PRs, revisión de contenido                         |
 |  Agustin Rocamora |    Colaborador    |                         Carga de ICs, apertura de PRs, revisión de contenido                         |
+|  Ayelen Ferraro   |    Colaborador    |                         Carga de ICs, apertura de PRs, revisión de contenido                         |
 
 ## Sobre el Administrador SCM
 

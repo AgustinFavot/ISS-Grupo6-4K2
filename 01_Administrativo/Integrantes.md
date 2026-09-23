@@ -10,3 +10,4 @@
 | Alejandro Rojas   | 81310  | ale10rojas@gmail.com    |
 | Baltazar Mari     | 400231 | baltazarmari73@gmail.com|
 | Agustin Rocamora  | 94122  | ricaguroc@gmail.com     |
+| Ayelen Ferraro    | 99149  | ayeferraro27@gmail.com  |
