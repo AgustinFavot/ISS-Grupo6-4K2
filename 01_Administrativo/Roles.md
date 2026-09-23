@@ -11,7 +11,7 @@
 |  Franco Caudana   |   Scrum Master    |                    Mediado, organizador y eliminador de impedimientos del equipo                     |
 |  Alejandro Rojas  |    Colaborador    |                         Carga de ICs, apertura de PRs, revisión de contenido                         |
 |  Baltazar Mari    |    Colaborador    |                         Carga de ICs, apertura de PRs, revisión de contenido                         |
-|  [Integrante 6]   |    Colaborador    |                         Carga de ICs, apertura de PRs, revisión de contenido                         |
+|  Agustin Rocamora |    Colaborador    |                         Carga de ICs, apertura de PRs, revisión de contenido                         |
 
 ## Sobre el Administrador SCM
 
