@@ -40,6 +40,10 @@ Esta matriz relaciona cada IC con su estado actual en el repositorio y con los p
 | IC-26 | Cronograma | MTR | `06_Catedra/cronograma.md` | ✅ Presente |
 | IC-27 | Condiciones de promoción | MTR | `06_Catedra/condiciones_promocion.md` | ✅ Presente |
 | IC-28 | Contacto docentes | ADM | `06_Catedra/contacto_docentes.md` | ✅ Presente |
+| IC-29 | Template primer parcial | MTR | `03_Material_Estudio/Templates/IngSw-TemplateParcial1.docx` | ✅ Presente |
+| IC-30 | Template Caso de Prueba - Caja Negra | MTR | `03_Material_Estudio/Templates/Template-Caso-de-Prueba.docx` | ✅ Presente |
+| IC-31 | Template Casos de Prueba y Reporte de Bugs | MTR | `03_Material_Estudio/Templates/Template-Caso-De-Prueba.xlsx` | ✅ Presente |
+| IC-32 | Preguntas Frecuentes (FAQ) | MTR | `06_Catedra/faq_isw_2026.md` | ✅ Presente |
 
 **Leyenda:**  
 ✅ Presente y completo | ⏳ Pendiente según avance | ⚠️ Pendiente de acción inmediata
@@ -60,3 +64,7 @@ Esta matriz relaciona cada IC con su estado actual en el repositorio y con los p
 | IC-19 | Modelos de evaluación | Preparación de parciales | Unidades 1–4 |
 | IC-20 | Presentaciones de clase | Material de estudio | Unidades 1–4 |
 | IC-21 | Resúmenes del equipo | Material de estudio | Unidades 1–4 |
+| IC-29 | Template primer parcial | Preparación de parciales | Unidades 1–4 |
+| IC-30 | Template Caso de Prueba - Caja Negra | TPG-9 (Testing) | Unidad 4 – Testing |
+| IC-31 | Template Casos de Prueba y Reporte de Bugs | TPG-9 (Testing) | Unidad 4 – Testing |
+| IC-32 | Preguntas Frecuentes (FAQ) | Material de consulta general | General |
