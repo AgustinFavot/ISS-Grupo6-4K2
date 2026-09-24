@@ -7,5 +7,5 @@
 | Agustin Favot     | 80245  | agustin.favot@gmail.com |
 | Leon Marin        | 400517 | leonmarinfont@gmail.com |
 | Ignacio Amor      | 89507  | amorignacio80@gmail.com |
-| [Integrante 4] | — | — | — |
+| Baltazar Mari     | 400231 | baltazarmari73@gmail.com |
 | [Integrante 5] | — | — | — |
