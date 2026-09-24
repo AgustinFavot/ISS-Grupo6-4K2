@@ -6,6 +6,6 @@
 |-------------------|--------|-------------------------|
 | Agustin Favot     | 80245  | agustin.favot@gmail.com |
 | Leon Marin        | 400517 | leonmarinfont@gmail.com |
-| [Integrante 3] | — | — | — |
+| Ignacio Amor      | 89507  | amorignacio80@gmail.com |
 | [Integrante 4] | — | — | — |
 | [Integrante 5] | — | — | — |
