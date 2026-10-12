@@ -81,8 +81,12 @@ ISS-Grupo6-4K2/
 │   │   └── casos_estudio_intensivo.pdf        # IC-18
 │   ├── Modelos_Evaluacion/
 │   │   └── modelo_[tipo]_[tema].pdf           # IC-19
-│   └── Presentaciones/
-│       └── (nombre original de cátedra)       # IC-20
+│   ├── Presentaciones/
+│   │   └── (nombre original de cátedra)       # IC-20
+│   └── Templates/
+│       ├── (template primer parcial)          # IC-29
+│       ├── (template caja negra)              # IC-30
+│       └── (template casos prueba y bugs)     # IC-31
 │
 ├── 04_Notas_Equipo/
 │   ├── Resumenes/
@@ -99,7 +103,8 @@ ISS-Grupo6-4K2/
     ├── modalidad_academica.md                 # IC-25
     ├── cronograma.md                          # IC-26
     ├── condiciones_promocion.md               # IC-27
-    └── contacto_docentes.md                  # IC-28
+    ├── contacto_docentes.md                  # IC-28
+    └── faq_isw_2026.md                        # IC-32
 ```
 
 ---
@@ -153,6 +158,10 @@ ISS-Grupo6-4K2/
 | IC-26 | Cronograma | MTR | `cronograma.md` (fijo) | `/06_Catedra/` | Fechas clave: entregas, parciales y exámenes |
 | IC-27 | Condiciones de promoción | MTR | `condiciones_promocion.md` (fijo) | `/06_Catedra/` | Requisitos para promocionar la materia |
 | IC-28 | Contacto docentes | ADM | `contacto_docentes.md` (fijo) | `/06_Catedra/` | Datos de contacto de los docentes de la comisión |
+| IC-29 | Template primer parcial | MTR | RN-04 | `/03_Material_Estudio/Templates/` | Plantilla Word provista por la cátedra para desarrollar el primer parcial práctico |
+| IC-30 | Template Caso de Prueba - Caja Negra | MTR | RN-04 | `/03_Material_Estudio/Templates/` | Plantilla para documentar casos de prueba de caja negra |
+| IC-31 | Template Casos de Prueba y Reporte de Bugs | MTR | RN-04 | `/03_Material_Estudio/Templates/` | Plantilla para documentar casos de prueba y reportar bugs |
+| IC-32 | Preguntas Frecuentes (FAQ) | MTR | `faq_isw_2026.md` (fijo) | `/06_Catedra/` | Página de FAQs del aula virtual exportada como documento de referencia |
 
 ---
 
