@@ -9,5 +9,8 @@
 | Franco Caudana    | 90277  | francocaudanautn@gmail.com|
 | Alejandro Rojas   | 81310  | ale10rojas@gmail.com    |
 | Baltazar Mari     | 400231 | baltazarmari73@gmail.com|
-| Agustin Rocamora  | 94122  | ricaguroc@gmail.com     |
+| Ricardo Rocamora  | 94122  | ricaguroc@gmail.com     |
 | Ayelen Ferraro    | 99149  | ayeferraro27@gmail.com  |
+| Ignacio Amor      | 89507  | —                       |
+| Franco Gomez      | 401531 | —                       |
+| David Romero      | 97069  | —                       |

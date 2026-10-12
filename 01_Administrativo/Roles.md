@@ -10,9 +10,12 @@
 |    Leon Marin     |    Colaborador    |                         Carga de ICs, apertura de PRs, revisión de contenido                         |
 |  Franco Caudana   |   Scrum Master    |                    Mediado, organizador y eliminador de impedimientos del equipo                     |
 |  Alejandro Rojas  |    Colaborador    |                         Carga de ICs, apertura de PRs, revisión de contenido                         |
-|  Baltazar Mari    |    Colaborador    |                         Carga de ICs, apertura de PRs, revisión de contenido                         |
-|  Agustin Rocamora |    Colaborador    |                         Carga de ICs, apertura de PRs, revisión de contenido                         |
+|   Baltazar Mari   |    Colaborador    |                         Carga de ICs, apertura de PRs, revisión de contenido                         |
+| Ricardo Rocamora  |    Colaborador    |                         Carga de ICs, apertura de PRs, revisión de contenido                         |
 |  Ayelen Ferraro   |    Colaborador    |                         Carga de ICs, apertura de PRs, revisión de contenido                         |
+|   Ignacio Amor    |    Colaborador    |                         Carga de ICs, apertura de PRs, revisión de contenido                         |
+|   Franco Gomez    |    Colaborador    |                         Carga de ICs, apertura de PRs, revisión de contenido                         |
+|   David Romero    |    Colaborador    |                         Carga de ICs, apertura de PRs, revisión de contenido                         |
 
 ## Sobre el Administrador SCM
 
