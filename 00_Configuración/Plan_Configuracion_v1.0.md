@@ -51,9 +51,9 @@ ISS-Grupo6-4K2/
 │   ├── Plan_Configuracion_v[X].[Y].md         # IC-02
 │   ├── Matriz_Trazabilidad_v[X].[Y].md        # IC-03
 │   ├── Estandares/
-│   │   ├── convenciones-nombres.md            # IC-04a
-│   │   ├── convenciones-commits.md            # IC-04b
-│   │   └── convenciones-ramas.md             # IC-04c
+│   │   ├── convenciones_nombres.md            # IC-04a
+│   │   ├── convenciones_commits.md            # IC-04b
+│   │   └── convenciones_ramas.md             # IC-04c
 │   └── Configuracion_Extra/                   # IC-05 (libre)
 │
 ├── 01_Administrativo/
@@ -61,7 +61,7 @@ ISS-Grupo6-4K2/
 │   └── Roles.md                              # IC-09
 │
 ├── 02_TP/
-│   ├── guiatp_evaluables.pdf                  # IC-10
+│   ├── GuiaTP_Evaluables.pdf                  # IC-10
 │   ├── TIG/
 │   │   └── TIG_[nro]_[Nombre]/
 │   │       ├── ti[nro]_isw_4k2_grupo6.[ext]  # IC-11
@@ -133,10 +133,10 @@ ISS-Grupo6-4K2/
 | IC-01 | README | DOC | `README.md` (fijo) | `/` | Índice y guía del repositorio |
 | IC-02 | Plan de Configuración | DOC | RN-01 | `/00_Configuración/` | Documento maestro del SCM. Este documento. |
 | IC-03 | Matriz de Trazabilidad | DOC | RN-01 | `/00_Configuración/` | Trazabilidad entre ICs y entregas del cursado |
-| IC-04 | Convenciones del equipo | STD | RN-06 | `/00_Configuración/Estandares/` | Archivos de convenciones (nombres, commits, ramas) |
+| IC-04 | Convenciones del equipo | STD | RN-05 | `/00_Configuración/Estandares/` | Archivos de convenciones (nombres, commits, ramas) |
 | IC-05 | Configuración extra | CFG | libre | `/00_Configuración/Configuracion_Extra/` | Capturas de branch protection, .editorconfig, etc. |
-| IC-06 | .gitignore | CFG | RN-07 | `/` | Exclusiones del control de versiones |
-| IC-07 | Workflow de CI | CFG | RN-07 | `/.github/workflows/` | Automatizaciones de validación continua |
+| IC-06 | .gitignore | CFG | RN-06 | `/` | Exclusiones del control de versiones |
+| IC-07 | Workflow de CI | CFG | RN-06 | `/.github/workflows/` | Automatizaciones de validación continua |
 | IC-08 | Listado de integrantes | ADM | `Integrantes.md` (fijo) | `/01_Administrativo/` | Datos de contacto de cada integrante |
 | IC-09 | Roles del equipo | ADM | `Roles.md` (fijo) | `/01_Administrativo/` | Rol de cada integrante dentro del grupo |
 | IC-10 | Guía de TPs evaluables | MTR | RN-04 | `/02_TP/` | Consigna oficial de la cátedra, conservada como referencia |
@@ -148,12 +148,12 @@ ISS-Grupo6-4K2/
 | IC-16 | Minuta de TPG | ACT | RN-02 | `/02_TP/TPG/TPG_[nro]_[Nombre]/Minutas/` | Registro de reunión de trabajo del TPG |
 | IC-17 | Casos de estudio resueltos | MTR | RN-04 | `/03_Material_Estudio/Casos_Estudio/` | Guía de ejercicios prácticos resueltos de la cátedra |
 | IC-18 | Casos de estudio intensivo | MTR | RN-04 | `/03_Material_Estudio/Casos_Estudio/` | Casos para el intensivo provistos por la cátedra |
-| IC-19 | Modelos de evaluación | MTR | RN-08 | `/03_Material_Estudio/Modelos_Evaluacion/` | Parciales/finales de referencia tomados o no |
+| IC-19 | Modelos de evaluación | MTR | RN-05 | `/03_Material_Estudio/Modelos_Evaluacion/` | Parciales/finales de referencia tomados o no |
 | IC-20 | Presentaciones de clase | MTR | RN-04 | `/03_Material_Estudio/Presentaciones/` | Slides provistos por la cátedra (nombre original) |
-| IC-21 | Resúmenes del equipo | NTS | RN-09 | `/04_Notas_Equipo/Resumenes/` | Contenido sintetizado y elaborado por el equipo |
-| IC-22 | Anotaciones de clase | NTS | RN-10 | `/04_Notas_Equipo/Anotaciones/` | Notas crudas tomadas durante las clases |
+| IC-21 | Resúmenes del equipo | NTS | RN-05 | `/04_Notas_Equipo/Resumenes/` | Contenido sintetizado y elaborado por el equipo |
+| IC-22 | Anotaciones de clase | NTS | RN-02 | `/04_Notas_Equipo/Anotaciones/` | Notas crudas tomadas durante las clases |
 | IC-23 | Enlaces útiles | BIB | `enlaces_utiles.md` (fijo) | `/05_Bibliografia/` | Lista curada de recursos web de referencia |
-| IC-24 | Material externo | BIB | RN-05 | `/05_Bibliografia/Material_Externo/` | Libros y papers de terceros, clasificados por tema |
+| IC-24 | Material externo | BIB | (libre) | `/05_Bibliografia/Material_Externo/` | Libros y papers de terceros, clasificados por tema |
 | IC-25 | Modalidad académica | MTR | `modalidad_academica.md` (fijo) | `/06_Catedra/` | Condiciones generales de cursado de la cátedra |
 | IC-26 | Cronograma | MTR | `cronograma.md` (fijo) | `/06_Catedra/` | Fechas clave: entregas, parciales y exámenes |
 | IC-27 | Condiciones de promoción | MTR | `condiciones_promocion.md` (fijo) | `/06_Catedra/` | Requisitos para promocionar la materia |
@@ -172,19 +172,15 @@ Las siguientes reglas se aplican por categoría de IC. Cada IC en la Sección 4 
 | Regla | Patrón | Descripción |
 |-------|--------|-------------|
 | **RN-01** | `<nombre>_v<MAJOR>.<MINOR>.md` | **Documentos versionados.** `<nombre>` en snake_case sin mayúsculas ni tildes. |
-| **RN-02** | `<tipo>_<AAAA-MM-DD>[_<tema>].md` | **Minutas y anotaciones.** `<tipo>`: `minuta` o `anotacion`. Fecha en formato ISO 8601. |
+| **RN-02** | `<tipo>_<AAAA-MM-DD>[_<tema>].<ext>` | **Documentos del equipo con fecha.** `<tipo>`: `minuta`, `anotacion`. Fecha en formato ISO 8601. |
 | **RN-03** | `<tipo><nro>_isw_4k2_grupo6.<ext>` | **Entregables grupales.** `<tipo>`: `ti` (TIG) o `tp` (TPG). `<nro>` alineado con la numeración de la cátedra. |
 | **RN-04** | nombre original de la cátedra | **Material de cátedra.** Se conserva el nombre exacto con el que fue provisto. Sin modificaciones. |
-| **RN-05** | `<apellido_autor>-<titulo_abreviado>.<ext>` | **Material externo.** Todo en minúsculas, sin tildes ni caracteres especiales. Guiones entre palabras. |
-| **RN-06** | `convenciones-<tema>.md` | **Convenciones del equipo.** `<tema>`: `nombres`, `commits`, `ramas`. |
-| **RN-07** | según convención de la herramienta | **Configuración técnica.** `.gitignore`, `*.yml`, etc. No se modifica el nombre que la herramienta espera. |
-| **RN-08** | `modelo_<tipo>_<tema>.<ext>` | **Modelos de evaluación.** `<tipo>`: `parcial`, `final` o `coloquio`. |
-| **RN-09** | `resumen_unidad<nro>_<tema>.md` | **Resúmenes del equipo.** `<nro>` es el número de unidad de la materia; `<tema>` en snake_case. |
-| **RN-10** | `anotacion_<AAAA-MM-DD>_<tema>.md` | **Anotaciones de clase.** Fecha primero para que el orden cronológico sea automático. |
+| **RN-05** | `<tipo>_<tema>.<ext>` | **Documentos del equipo sin fecha.** `<tipo>` describe el contenido: `resumen`, `modelo`, `convenciones`. `<tema>` en snake_case. |
+| **RN-06** | según convención de la herramienta | **Configuración técnica.** `.gitignore`, `*.yml`, etc. No se modifica el nombre que la herramienta espera. |
 
 ### 5.1 Convenciones generales aplicables a todas las reglas
 
-- Los nombres de archivo usan **snake_case** (palabras unidas por `_`) salvo las excepciones indicadas (guiones en RN-05 y RN-06).
+- Los nombres de archivo usan **snake_case** (palabras unidas por `_`) salvo los archivos de configuración técnica (RN-06), que siguen la convención de la herramienta.
 - **Sin tildes ni ñ** en nombres de archivo para evitar problemas de codificación.
 - Las extensiones van siempre en **minúsculas** (`.md`, `.pdf`, `.docx`, `.yml`).
 - Las carpetas siguen el patrón `NN_NombreDescriptivo/` con prefijo numérico de dos dígitos para mantener el orden visual del explorador.
@@ -241,7 +237,7 @@ Ejemplo: `LB-01_config-inicial`, `LB-02_entrega-tp5`
 1. Verificar que el IC está definido en la Sección 4. Si no lo está, proponer su inclusión al equipo antes de hacer commit.
 2. Aplicar la regla de nombrado que corresponde (ver Sección 5).
 3. Ubicar el archivo en la carpeta indicada en la tabla de ICs.
-4. Hacer commit con mensaje descriptivo (ver `convenciones-commits.md`).
+4. Hacer commit con mensaje descriptivo (ver `convenciones_commits.md`).
 5. Abrir un Pull Request hacia `main` para revisión del equipo.
 
 ### 7.2 Modificar un IC versionado (RN-01)

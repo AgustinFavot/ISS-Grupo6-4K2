@@ -11,9 +11,9 @@ Esta matriz relaciona cada IC con su estado actual en el repositorio y con los p
 | IC-01 | README | DOC | `README.md` | ✅ Presente |
 | IC-02 | Plan de Configuración | DOC | `00_Configuración/Plan_Configuracion_v1.0.md` | ✅ Presente |
 | IC-03 | Matriz de Trazabilidad | DOC | `00_Configuración/Matriz_Trazabilidad_v1.0.md` | ✅ Presente |
-| IC-04a | Convenciones de nombres | STD | `00_Configuración/Estandares/convenciones-nombres.md` | ✅ Presente |
-| IC-04b | Convenciones de commits | STD | `00_Configuración/Estandares/convenciones-commits.md` | ✅ Presente |
-| IC-04c | Convenciones de ramas | STD | `00_Configuración/Estandares/convenciones-ramas.md` | ✅ Presente |
+| IC-04a | Convenciones de nombres | STD | `00_Configuración/Estandares/convenciones_nombres.md` | ✅ Presente |
+| IC-04b | Convenciones de commits | STD | `00_Configuración/Estandares/convenciones_commits.md` | ✅ Presente |
+| IC-04c | Convenciones de ramas | STD | `00_Configuración/Estandares/convenciones_ramas.md` | ✅ Presente |
 | IC-05 | Configuración extra | CFG | `00_Configuración/Configuracion_Extra/` | ⏳ Carpeta creada, sin contenido aún |
 | IC-06 | .gitignore | CFG | `.gitignore` | ⚠️ Pendiente de creación |
 | IC-07 | Workflow de CI | CFG | `.github/workflows/telegram-pr-notification.yml` | ✅ Presente |
