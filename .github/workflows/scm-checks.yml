@@ -1,0 +1,89 @@
+name: Validaciones SCM
+
+# Valida en cada Pull Request las convenciones del equipo definidas en
+# 00_Configuración/Estandares/ (convenciones_ramas.md y convenciones_commits.md).
+# El título del PR se valida contra la convención de commits porque el merge
+# se hace por squash: el título del PR se convierte en el commit de main.
+
+on:
+  pull_request:
+    types: [opened, edited, synchronize, reopened]
+
+permissions:
+  contents: read
+  pull-requests: read
+
+jobs:
+  nombre-de-rama:
+    name: Nombre de rama (convenciones_ramas.md)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Validar convención de rama
+        env:
+          BRANCH: ${{ github.head_ref }}
+        shell: bash
+        run: |
+          REGEX='^(feature|fix|docs)/[a-z0-9]+(-[a-z0-9]+)*$'
+
+          if [[ "$BRANCH" =~ $REGEX ]]; then
+            echo "✅ La rama '$BRANCH' cumple la convención."
+            exit 0
+          fi
+
+          echo "❌ La rama '$BRANCH' NO cumple la convención de ramas."
+          echo ""
+          echo "Formato esperado:  <tipo>/<descripcion-breve>"
+          echo "Tipos permitidos:  feature/  fix/  docs/"
+          echo "Estilo:            kebab-case, todo en minúsculas, sin tildes"
+          echo ""
+          echo "Ejemplos válidos:  feature/estructura-tp5"
+          echo "                   fix/renombrar-catedra-snake-case"
+          echo "                   docs/actualizar-plan-v1.1"
+          echo ""
+          echo "Referencia: 00_Configuración/Estandares/convenciones_ramas.md"
+          exit 1
+
+  titulo-del-pr:
+    name: Título del PR (convenciones_commits.md)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Validar convención de commits sobre el título del PR
+        env:
+          TITLE: ${{ github.event.pull_request.title }}
+        shell: bash
+        run: |
+          ERRORES=()
+
+          REGEX='^(add|update|fix|rename|remove|refactor|docs): .+'
+          if [[ ! "$TITLE" =~ $REGEX ]]; then
+            ERRORES+=("El título debe tener el formato '<tipo>: <descripción breve en imperativo>'. Tipos permitidos: add, update, fix, rename, remove, refactor, docs.")
+          fi
+
+          if (( ${#TITLE} > 66 )); then
+            ERRORES+=("El título tiene ${#TITLE} caracteres; el máximo es 66 (GitHub agrega ' (#NN)' al squashear, y el commit resultante no debe superar 72).")
+          fi
+
+          if [[ "$TITLE" == *. ]]; then
+            ERRORES+=("El título no debe terminar con punto.")
+          fi
+
+          if (( ${#ERRORES[@]} == 0 )); then
+            echo "✅ El título del PR cumple la convención de commits."
+            exit 0
+          fi
+
+          echo "❌ El título del PR NO cumple la convención de commits:"
+          echo ""
+          echo "   Título actual: $TITLE"
+          echo ""
+          for e in "${ERRORES[@]}"; do
+            echo " - $e"
+          done
+          echo ""
+          echo "Ejemplos válidos:  add: incorporar entregable tp5"
+          echo "                   fix: corregir ubicacion de minuta en carpeta TIG"
+          echo "                   docs: actualizar tabla de lineas base en Plan"
+          echo ""
+          echo "El título se corrige editando el PR (no hace falta pushear nada)."
+          echo "Referencia: 00_Configuración/Estandares/convenciones_commits.md"
+          exit 1

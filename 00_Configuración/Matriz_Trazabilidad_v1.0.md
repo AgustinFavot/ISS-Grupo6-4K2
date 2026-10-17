@@ -16,7 +16,7 @@ Esta matriz relaciona cada IC con su estado actual en el repositorio y con los p
 | IC-04c | Convenciones de ramas | STD | `00_Configuración/Estandares/convenciones_ramas.md` | ✅ Presente |
 | IC-05 | Configuración extra | CFG | `00_Configuración/Configuracion_Extra/` | ⏳ Carpeta creada, sin contenido aún |
 | IC-06 | .gitignore | CFG | `.gitignore` | ✅ Presente |
-| IC-07 | Workflow de CI | CFG | `.github/workflows/telegram-pr-notification.yml` | ✅ Presente |
+| IC-07 | Workflow de CI | CFG | `.github/workflows/` (telegram-pr-notification.yml, scm-checks.yml) | ✅ Presente |
 | IC-08 | Listado de integrantes | ADM | `01_Administrativo/Integrantes.md` | ✅ Presente |
 | IC-09 | Roles del equipo | ADM | `01_Administrativo/Roles.md` | ✅ Presente |
 | IC-10 | Guía de TPs evaluables | MTR | `02_TP/GuiaTP_Evaluables.pdf` | ✅ Presente |
@@ -46,6 +46,7 @@ Esta matriz relaciona cada IC con su estado actual en el repositorio y con los p
 | IC-32 | Preguntas Frecuentes (FAQ) | MTR | `06_Catedra/faq_isw_2026.md` | ✅ Presente |
 | IC-33 | Lineamientos de trabajos de investigación | MTR | `02_TP/ISW_Lineamientos para trabajos de investigación 2026 2C.pdf` | ✅ Presente |
 | IC-34 | Documentos originales de cátedra | MTR | `06_Catedra/` (PDFs con nombre original) | ✅ Presente |
+| IC-35 | Template de Pull Request | CFG | `.github/PULL_REQUEST_TEMPLATE.md` | ✅ Presente |
 
 **Leyenda:**  
 ✅ Presente y completo | ⏳ Pendiente según avance | ⚠️ Pendiente de acción inmediata

@@ -15,7 +15,7 @@ Centraliza todos los Ítems de Configuración (IC) producidos durante el cursado
 | `04_Notas_Equipo/` | Producción propia del equipo: resúmenes y anotaciones de clase |
 | `05_Bibliografia/` | Enlaces útiles y material externo clasificado por tema (SCM, Ing. de Software, Testing, TDD, Agilismo, Lean-Kanban) |
 | `06_Catedra/` | Información institucional: modalidad académica, cronograma, condiciones de promoción, contacto docentes y FAQ |
-| `.github/workflows/` | Automatizaciones del repositorio (notificación de PRs a Telegram) |
+| `.github/` | Automatizaciones del repositorio: validaciones SCM en cada PR (nombre de rama y título), notificación de PRs a Telegram, y template de PR con checklist SCM |
 
 ## Documentos de referencia
 

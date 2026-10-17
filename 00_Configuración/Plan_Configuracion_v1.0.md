@@ -45,6 +45,7 @@ ISS-Grupo6-4K2/
 ├── .gitignore                                  # IC-06
 │
 ├── .github/
+│   ├── PULL_REQUEST_TEMPLATE.md               # IC-35
 │   └── workflows/                             # IC-07
 │
 ├── 00_Configuración/
@@ -166,6 +167,7 @@ ISS-Grupo6-4K2/
 | IC-32 | Preguntas Frecuentes (FAQ) | MTR | `faq_isw_2026.md` (fijo) | `/06_Catedra/` | Página de FAQs del aula virtual exportada como documento de referencia |
 | IC-33 | Lineamientos de trabajos de investigación | MTR | RN-04 | `/02_TP/` | Lineamientos oficiales de la cátedra para los TIG (exposición y poster) |
 | IC-34 | Documentos originales de cátedra | MTR | RN-04 | `/06_Catedra/` | PDFs oficiales de la cátedra conservados como fuente de los documentos normalizados (IC-25 a IC-28) |
+| IC-35 | Template de Pull Request | CFG | RN-06 | `/.github/` | Checklist SCM que guía cada PR (convenciones, ICs, sincronía de Matriz y Sheet) |
 
 ---
 
