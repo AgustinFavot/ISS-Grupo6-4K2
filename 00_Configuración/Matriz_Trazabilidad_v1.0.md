@@ -16,7 +16,7 @@ Esta matriz relaciona cada IC con su estado actual en el repositorio y con los p
 | IC-04c | Convenciones de ramas | STD | `00_Configuración/Estandares/convenciones_ramas.md` | ✅ Presente |
 | IC-05 | Configuración extra | CFG | `00_Configuración/Configuracion_Extra/` | ⏳ Carpeta creada, sin contenido aún |
 | IC-06 | .gitignore | CFG | `.gitignore` | ✅ Presente |
-| IC-07 | Workflow de CI | CFG | `.github/workflows/` (telegram-pr-notification.yml, scm-checks.yml) | ✅ Presente |
+| IC-07 | Automatizaciones de CI | CFG | `.github/workflows/` y `.github/scripts/` (telegram-pr-notification.yml, scm-checks.yml, validar_estructura.py) | ✅ Presente |
 | IC-08 | Listado de integrantes | ADM | `01_Administrativo/Integrantes.md` | ✅ Presente |
 | IC-09 | Roles del equipo | ADM | `01_Administrativo/Roles.md` | ✅ Presente |
 | IC-10 | Guía de TPs evaluables | MTR | `02_TP/GuiaTP_Evaluables.pdf` | ✅ Presente |

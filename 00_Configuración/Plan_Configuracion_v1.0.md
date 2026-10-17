@@ -46,6 +46,7 @@ ISS-Grupo6-4K2/
 │
 ├── .github/
 │   ├── PULL_REQUEST_TEMPLATE.md               # IC-35
+│   ├── scripts/                               # IC-07
 │   └── workflows/                             # IC-07
 │
 ├── 00_Configuración/
@@ -139,7 +140,7 @@ ISS-Grupo6-4K2/
 | IC-04 | Convenciones del equipo | STD | RN-05 | `/00_Configuración/Estandares/` | Archivos de convenciones (nombres, commits, ramas) |
 | IC-05 | Configuración extra | CFG | libre | `/00_Configuración/Configuracion_Extra/` | Capturas de branch protection, .editorconfig, etc. |
 | IC-06 | .gitignore | CFG | RN-06 | `/` | Exclusiones del control de versiones |
-| IC-07 | Workflow de CI | CFG | RN-06 | `/.github/workflows/` | Automatizaciones de validación continua |
+| IC-07 | Automatizaciones de CI | CFG | RN-06 | `/.github/workflows/` y `/.github/scripts/` | Workflows de validación continua y sus scripts de soporte |
 | IC-08 | Listado de integrantes | ADM | `Integrantes.md` (fijo) | `/01_Administrativo/` | Datos de contacto de cada integrante |
 | IC-09 | Roles del equipo | ADM | `Roles.md` (fijo) | `/01_Administrativo/` | Rol de cada integrante dentro del grupo |
 | IC-10 | Guía de TPs evaluables | MTR | RN-04 | `/02_TP/` | Consigna oficial de la cátedra, conservada como referencia |

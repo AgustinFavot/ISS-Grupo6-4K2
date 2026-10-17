@@ -11,3 +11,7 @@ desktop.ini
 CLAUDE.md
 .claude/
 .playwright-mcp/
+
+# Python
+__pycache__/
+*.pyc
