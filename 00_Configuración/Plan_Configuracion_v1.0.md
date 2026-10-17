@@ -207,9 +207,9 @@ Una **línea base** (LB) es un conjunto de ICs revisados, acordados por todo el 
 
 En este repositorio las líneas base se materializan como **tags de Git** con el formato:
 ```
-LB-<NN>_<descripcion-breve>
+v[MAJOR].[MINOR]
 ```
-Ejemplo: `LB-01_config-inicial`, `LB-02_entrega-tp5`
+Ejemplo: `v1.0`, `v1.1`, `v2.0`
 
 ### 6.2 Criterios para crear una línea base
 
@@ -224,7 +224,7 @@ Ejemplo: `LB-01_config-inicial`, `LB-02_entrega-tp5`
 
 | Tag | Criterio aplicado | Fecha | Descripción |
 |-----|-------------------|-------|-------------|
-| `LB-01_config-inicial` | C1 | 2026-08-XX | Estructura base del repositorio cargada y acordada por el equipo |
+| `v1.0` | C1 | 2026-10-17 | Estructura base del repositorio cargada y acordada por el equipo |
 
 *(Se actualiza a medida que se crean nuevas LBs.)*
 
@@ -249,6 +249,6 @@ Ejemplo: `LB-01_config-inicial`, `LB-02_entrega-tp5`
 ### 7.3 Crear una línea base
 
 1. Asegurarse de que todos los cambios estén commiteados en `main`.
-2. Crear el tag: `git tag -a LB-NN_descripcion -m "Línea base: [descripción]"`
-3. Publicar el tag: `git push origin LB-NN_descripcion`
+2. Crear el tag: `git tag -a vMAJOR.MINOR -m "Línea base: [descripción]"`
+3. Publicar el tag: `git push origin vMAJOR.MINOR`
 4. Registrar la LB en la tabla 6.3 de este plan e incrementar MINOR del plan.
