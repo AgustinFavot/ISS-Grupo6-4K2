@@ -1,112 +1,35 @@
-# Estructura del Repositorio
+# ISS-Grupo6-4K2
 
-- **README.md**
-  - **#** propósito del proyecto y guía del repo
+Repositorio del **Grupo 6** – Ingeniería y Calidad de Software 2026, comisión 4K2, UTN FRC.
 
-## 00_Configuración/
-- **Plan_Configuración_v1.0.md**
-  - **#** Documento maestro de SCM; versionado por ser línea base en sí mismo
-- **Matriz_Trazabilidad_v1.0.md**
-  - **#** Matriz de trazabilidad de los ítems de configuración del repositorio
-- **Estándares/**
-  - *convenciones-nombres.md*
-    - **#** Convenciones en lenguaje natural, para lectura humana
-    - **#** Regla de nombrado de archivos y carpetas
-  - *convenciones-commits.md*
-    - **#** Formato acordado para mensajes de commit
-  - *convenciones-ramas.md*
-    - **#** Criterio de creación y nombrado de ramas
-- **Configuración_Extra/**
-  - **#** Reservada para ítems futuros (e.g., imágenes de config de ramas, config de bots de cambios)
+Centraliza todos los Ítems de Configuración (IC) producidos durante el cursado: documentación SCM, entregas formales, material de estudio, notas del equipo y bibliografía. La gestión del repositorio se rige por el **Plan de Configuración** (ver `00_Configuración/`).
 
----
+## Estructura del repositorio
 
-## .gitignore
-- **#** Define qué no se versiona
+| Carpeta | Contenido |
+|---------|-----------|
+| `00_Configuración/` | Plan de Configuración, Matriz de Trazabilidad y estándares del equipo (convenciones de nombres, commits y ramas) |
+| `01_Administrativo/` | Integrantes del grupo y roles asignados |
+| `02_TP/` | Entregas formales: guía de TPs evaluables, lineamientos de TIG, y carpetas por TIG/TPG con entregables, anexos y minutas |
+| `03_Material_Estudio/` | Casos de estudio, modelos de evaluación, presentaciones de clase y templates provistos por la cátedra |
+| `04_Notas_Equipo/` | Producción propia del equipo: resúmenes y anotaciones de clase |
+| `05_Bibliografia/` | Enlaces útiles y material externo clasificado por tema (SCM, Ing. de Software, Testing, TDD, Agilismo, Lean-Kanban) |
+| `06_Catedra/` | Información institucional: modalidad académica, cronograma, condiciones de promoción, contacto docentes y FAQ |
+| `.github/workflows/` | Automatizaciones del repositorio (notificación de PRs a Telegram) |
 
----
+## Documentos de referencia
 
-## .github/
-- **workflows/**
-  - *naming-check.yml*
-    - **#** Automatizaciones de CI
-    - **#** Valida nombrado y ramas en cada push/PR
-- **config/**
-  - *naming-rules.yml*
-    - **#** Centraliza reglas que los workflows van a leer (YAML)
-    - **#** Reglas de nombrado de archivos
-  - *branch-rules.yml*
-    - **#** Reglas de ramas
+- **Plan de Configuración** (`00_Configuración/Plan_Configuracion_v1.0.md`) — fuente de verdad: definición de ICs, reglas de nombrado, esquema de versionado, criterios de línea base y procedimientos.
+- **Matriz de Trazabilidad** (`00_Configuración/Matriz_Trazabilidad_v1.0.md`) — estado de cada IC y su trazabilidad con los productos académicos.
+- **Convenciones** (`00_Configuración/Estandares/`) — reglas de nombres, commits y ramas.
 
----
+## Reglas de trabajo
 
-## 01_Administrativo/
-- *Integrantes.md*
-  - **#** Gestión del equipo
-  - **#** Datos de contacto de cada integrante
-- *Roles.md*
-  - **#** Rol de cada integrante en el equipo
+- Todo archivo del repositorio debe estar clasificado como IC en el Plan (Sección 4).
+- Los nombres de archivo siguen las reglas RN-01 a RN-06 del Plan (Sección 5).
+- Los cambios entran a `main` mediante Pull Request con revisión de otro integrante.
+- Las líneas base se marcan como tags de Git con formato `v[MAJOR].[MINOR]`.
 
----
+## Integrantes
 
-## 02_TP/
-- *GuiaTP_Evaluables.pdf*
-  - **#** Productos evaluables del cursado
-  - **#** Consigna original, conservada como referencia
-- **TIG/**
-  - **TIG_[nro]_[Nombre]/**
-    - **Minutas/**
-      - **#** Una carpeta por Trabajo de Investigación Grupal
-      - **#** Historial de avance de esa entrega
-- **TPG/**
-  - **TPG_[nro]_[Nombre]/**
-    - **Minutas/**
-      - **#** Una carpeta por Trabajo Práctico Grupal
-
----
-
-## 03_Material_Estudio/
-- **Casos_Estudio/**
-  - *Casos_Estudio_Resueltos.pdf*
-    - **#** Todo lo provisto por la cátedra (no autoría propia)
-    - **#** Material de práctica entregado por la cátedra
-  - *Casos_Estudio_Intensivo.pdf*
-- **Modelos_Evaluacion/**
-  - **#** Ejemplos de parcial/final, tomados o no
-
----
-
-## 04_Notas_Equipo/
-- **Resumenes/**
-  - **#** Todo lo redactado por el equipo (autoría propia)
-  - **#** Contenido ya elaborado y sintetizado
-- **Anotaciones/**
-  - **#** Notas de clase más crudas, tomadas al momento
-
----
-
-## 05_Bibliografía/
-- *Enlaces_Utiles.md*
-  - **#** Material externo de referencia/consulta
-  - **#** Lista curada de recursos web
-- **Material_Externo/**
-  - **SCM/**
-  - **Ing_Sfw/**
-  - **Testing_Sfw/**
-  - **TDD/**
-  - **Agilismo/**
-  - **Lean_Kanban/**
-  - **#** Libros y papers clasificados por tema y no clasificados
-
----
-
-## 06_Cátedra/
-- *Normas_Académica.md*
-  - **#** Información institucional
-  - **#** Condiciones generales fijadas por la cátedra
-- *Cronograma.md*
-  - **#** Fechas clave de entregas y exámenes
-- *Condiciones_Promocion.md*
-  - **#** Requisitos para promocionar
-- *Contacto_Docentes.md*
-  - **#** Vía de contacto con la cátedra.
+Ver `01_Administrativo/Integrantes.md` y `01_Administrativo/Roles.md`.
