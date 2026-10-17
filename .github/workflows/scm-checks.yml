@@ -87,3 +87,14 @@ jobs:
           echo "El título se corrige editando el PR (no hace falta pushear nada)."
           echo "Referencia: 00_Configuración/Estandares/convenciones_commits.md"
           exit 1
+
+  estructura-del-repositorio:
+    name: Estructura e ítems sueltos (Plan Secciones 3-5)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Validar estructura, nombres de archivo y Matriz
+        shell: bash
+        run: python3 .github/scripts/validar_estructura.py
