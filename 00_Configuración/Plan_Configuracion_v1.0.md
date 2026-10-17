@@ -62,6 +62,7 @@ ISS-Grupo6-4K2/
 │
 ├── 02_TP/
 │   ├── GuiaTP_Evaluables.pdf                  # IC-10
+│   ├── (lineamientos de TIG – nombre original) # IC-33
 │   ├── TIG/
 │   │   └── TIG_[nro]_[Nombre]/
 │   │       ├── ti[nro]_isw_4k2_grupo6.[ext]  # IC-11
@@ -77,10 +78,10 @@ ISS-Grupo6-4K2/
 │
 ├── 03_Material_Estudio/
 │   ├── Casos_Estudio/
-│   │   ├── casos_estudio_resueltos.pdf        # IC-17
-│   │   └── casos_estudio_intensivo.pdf        # IC-18
+│   │   ├── (casos resueltos – nombre original) # IC-17
+│   │   └── (casos intensivo – nombre original) # IC-18
 │   ├── Modelos_Evaluacion/
-│   │   └── modelo_[tipo]_[tema].pdf           # IC-19
+│   │   └── modelo_[tema].pdf                  # IC-19
 │   ├── Presentaciones/
 │   │   └── (nombre original de cátedra)       # IC-20
 │   └── Templates/
@@ -90,7 +91,7 @@ ISS-Grupo6-4K2/
 │
 ├── 04_Notas_Equipo/
 │   ├── Resumenes/
-│   │   └── resumen_unidad[nro]_[tema].md      # IC-21
+│   │   └── resumen_[tema].md                  # IC-21
 │   └── Anotaciones/
 │       └── anotacion_AAAA-MM-DD_[tema].md     # IC-22
 │
@@ -104,7 +105,8 @@ ISS-Grupo6-4K2/
     ├── cronograma.md                          # IC-26
     ├── condiciones_promocion.md               # IC-27
     ├── contacto_docentes.md                  # IC-28
-    └── faq_isw_2026.md                        # IC-32
+    ├── faq_isw_2026.md                        # IC-32
+    └── (originales de cátedra – nombre original) # IC-34
 ```
 
 ---
@@ -162,6 +164,8 @@ ISS-Grupo6-4K2/
 | IC-30 | Template Caso de Prueba - Caja Negra | MTR | RN-04 | `/03_Material_Estudio/Templates/` | Plantilla para documentar casos de prueba de caja negra |
 | IC-31 | Template Casos de Prueba y Reporte de Bugs | MTR | RN-04 | `/03_Material_Estudio/Templates/` | Plantilla para documentar casos de prueba y reportar bugs |
 | IC-32 | Preguntas Frecuentes (FAQ) | MTR | `faq_isw_2026.md` (fijo) | `/06_Catedra/` | Página de FAQs del aula virtual exportada como documento de referencia |
+| IC-33 | Lineamientos de trabajos de investigación | MTR | RN-04 | `/02_TP/` | Lineamientos oficiales de la cátedra para los TIG (exposición y poster) |
+| IC-34 | Documentos originales de cátedra | MTR | RN-04 | `/06_Catedra/` | PDFs oficiales de la cátedra conservados como fuente de los documentos normalizados (IC-25 a IC-28) |
 
 ---
 

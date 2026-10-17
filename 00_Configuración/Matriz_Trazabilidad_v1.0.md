@@ -15,23 +15,23 @@ Esta matriz relaciona cada IC con su estado actual en el repositorio y con los p
 | IC-04b | Convenciones de commits | STD | `00_Configuración/Estandares/convenciones_commits.md` | ✅ Presente |
 | IC-04c | Convenciones de ramas | STD | `00_Configuración/Estandares/convenciones_ramas.md` | ✅ Presente |
 | IC-05 | Configuración extra | CFG | `00_Configuración/Configuracion_Extra/` | ⏳ Carpeta creada, sin contenido aún |
-| IC-06 | .gitignore | CFG | `.gitignore` | ⚠️ Pendiente de creación |
+| IC-06 | .gitignore | CFG | `.gitignore` | ✅ Presente |
 | IC-07 | Workflow de CI | CFG | `.github/workflows/telegram-pr-notification.yml` | ✅ Presente |
 | IC-08 | Listado de integrantes | ADM | `01_Administrativo/Integrantes.md` | ✅ Presente |
 | IC-09 | Roles del equipo | ADM | `01_Administrativo/Roles.md` | ✅ Presente |
-| IC-10 | Guía de TPs evaluables | MTR | `02_TP/guiatp_evaluables.pdf` | ⚠️ Pendiente de carga |
+| IC-10 | Guía de TPs evaluables | MTR | `02_TP/GuiaTP_Evaluables.pdf` | ✅ Presente |
 | IC-11 | Entregable TIG-1 | ENT | `02_TP/TIG/TIG_1_Despliegue-de-Producto/ti1_isw_4k2_grupo6.pdf` | ⚠️ Pendiente de carga |
 | IC-11 | Entregable TIG-2 | ENT | `02_TP/TIG/TIG_2_Frameworks-Lean-Agile/ti2_isw_4k2_grupo6.pdf` | ⚠️ Pendiente de carga |
 | IC-12 | Anexos de TIG | ANX | `02_TP/TIG/TIG_[nro]_[Nombre]/` | ⏳ Según avance de cada TIG |
 | IC-13 | Minutas de TIG | ACT | `02_TP/TIG/TIG_[nro]_[Nombre]/Minutas/` | ⏳ Según avance de cada TIG |
-| IC-14 | Entregable TPG-4 | ENT | `02_TP/TPG/TPG_4_SCM-Herramientas-SCM/tp4_isw_4k2_grupo6.pdf` | ⚠️ Pendiente de carga |
+| IC-14 | Entregable TPG-4 | ENT | `02_TP/TPG/TPG_4_SCM-Herramientas-de-SCM/tp4_isw_4k2_grupo6.md` | ✅ Presente (formato md; PDF original pendiente) |
 | IC-14 | Entregable TPG-5 | ENT | `02_TP/TPG/TPG_5_SCM-Uso-de-Repositorio/tp5_isw_4k2_grupo6.pdf` | ⏳ En curso (entrega: 17/11/2026) |
 | IC-15 | Anexos de TPG | ANX | `02_TP/TPG/TPG_[nro]_[Nombre]/` | ⏳ Según avance de cada TPG |
 | IC-16 | Minutas de TPG | ACT | `02_TP/TPG/TPG_[nro]_[Nombre]/Minutas/` | ⏳ Según avance de cada TPG |
-| IC-17 | Casos de estudio resueltos | MTR | `03_Material_Estudio/Casos_Estudio/` | ⚠️ Pendiente de carga |
-| IC-18 | Casos de estudio intensivo | MTR | `03_Material_Estudio/Casos_Estudio/` | ⚠️ Pendiente de carga |
+| IC-17 | Casos de estudio resueltos | MTR | `03_Material_Estudio/Casos_Estudio/` | ✅ Presente |
+| IC-18 | Casos de estudio intensivo | MTR | `03_Material_Estudio/Casos_Estudio/` | ✅ Presente |
 | IC-19 | Modelos de evaluación | MTR | `03_Material_Estudio/Modelos_Evaluacion/` | ⏳ Disponibles tras cada parcial |
-| IC-20 | Presentaciones de clase | MTR | `03_Material_Estudio/Presentaciones/` | ⚠️ Pendiente de carga |
+| IC-20 | Presentaciones de clase | MTR | `03_Material_Estudio/Presentaciones/` | ✅ Presente |
 | IC-21 | Resúmenes del equipo | NTS | `04_Notas_Equipo/Resumenes/` | ⏳ Según avance del cursado |
 | IC-22 | Anotaciones de clase | NTS | `04_Notas_Equipo/Anotaciones/` | ⏳ Según avance del cursado |
 | IC-23 | Enlaces útiles | BIB | `05_Bibliografia/enlaces_utiles.md` | ✅ Presente |
@@ -44,6 +44,8 @@ Esta matriz relaciona cada IC con su estado actual en el repositorio y con los p
 | IC-30 | Template Caso de Prueba - Caja Negra | MTR | `03_Material_Estudio/Templates/Template-Caso-de-Prueba.docx` | ✅ Presente |
 | IC-31 | Template Casos de Prueba y Reporte de Bugs | MTR | `03_Material_Estudio/Templates/Template-Caso-De-Prueba.xlsx` | ✅ Presente |
 | IC-32 | Preguntas Frecuentes (FAQ) | MTR | `06_Catedra/faq_isw_2026.md` | ✅ Presente |
+| IC-33 | Lineamientos de trabajos de investigación | MTR | `02_TP/ISW_Lineamientos para trabajos de investigación 2026 2C.pdf` | ✅ Presente |
+| IC-34 | Documentos originales de cátedra | MTR | `06_Catedra/` (PDFs con nombre original) | ✅ Presente |
 
 **Leyenda:**  
 ✅ Presente y completo | ⏳ Pendiente según avance | ⚠️ Pendiente de acción inmediata
@@ -56,6 +58,7 @@ Esta matriz relaciona cada IC con su estado actual en el repositorio y con los p
 | IC-03 | Matriz de Trazabilidad | TPG-5 (SCM Uso de Repositorio) | Unidad 3 – SCM |
 | IC-04 | Convenciones del equipo | TPG-5 (SCM Uso de Repositorio) | Unidad 3 – SCM |
 | IC-10 | Guía de TPs evaluables | Todos los TPGs | General |
+| IC-33 | Lineamientos de trabajos de investigación | TIG-1, TIG-2 | Unidades 1–4 |
 | IC-11 | Entregable TIG | TIG-1, TIG-2 | Unidades 1–4 |
 | IC-13 | Minutas de TIG | TIG-1, TIG-2 | Unidades 1–4 |
 | IC-14 | Entregable TPG | TPG-4, TPG-5, TPG-6, TPG-7, TPG-9, TPG-11, TPG-12 | Unidades 1–4 |

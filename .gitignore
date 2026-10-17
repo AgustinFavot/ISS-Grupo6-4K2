@@ -1,0 +1,13 @@
+# Temporales de Office
+~$*
+*.tmp
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Herramientas personales de desarrollo
+CLAUDE.md
+.claude/
+.playwright-mcp/

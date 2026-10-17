@@ -15,6 +15,8 @@ Recursos web de referencia para la materia Ingeniería y Calidad de Software.
 ## Aula Virtual del Curso
 
 - [UV – Ingeniería y Calidad de Software 2026](https://uv.frc.utn.edu.ar/course/view.php?id=10056)
+- [Clases grabadas (Google Sheets, 2021)](https://docs.google.com/spreadsheets/d/1f-zL7dxwD5cmVFyBrRYh79dEnoah73zg/edit?rtpof=true&sd=true&gid=742131616#gid=742131616)
+- [Cronograma oficial de la cátedra (Google Sheets)](https://docs.google.com/spreadsheets/d/1PJ3rz_RINCbiEVs5x-fe0KZC5enBPiOe/edit?gid=742131616#gid=742131616)
 
 ## Herramientas
 
