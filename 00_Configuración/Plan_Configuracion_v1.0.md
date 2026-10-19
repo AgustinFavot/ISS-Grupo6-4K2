@@ -29,7 +29,7 @@ Quedan excluidos del control de versiones: credenciales de acceso, archivos bina
 |-----|-----------------|
 | **Administrador SCM** | Mantener este plan actualizado, aprobar cambios estructurales al repositorio y crear líneas base. Rol rotativo entre todos los integrantes. |
 | **Colaborador** | Crear y modificar ICs siguiendo las reglas definidas en este plan. Todos los integrantes. |
-
+| **Scrum Master** | Facilitador de reuniones, Mediador y eliminador de impedimentos y Organizador y responsable del seguimiento|
 ---
 
 ## 3. Estructura del repositorio
