@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Inscribirme a una actividad – EcoHarmony Park</title>
+  <link rel="icon" href="{{ url_for('static', filename='logo.svg') }}" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='app.css') }}">
+</head>
+<body>
+  <header class="barra">
+    <div class="barra__contenido">
+      <img src="{{ url_for('static', filename='logo.svg') }}" alt="" class="barra__logo" width="36" height="36">
+      <span class="barra__marca">EcoHarmony Park</span>
+      <span class="barra__usuario" title="{{ titular.email }}">{{ titular.nombre }}</span>
+    </div>
+  </header>
+
+  <main class="pagina">
+    <h1>Inscribirme a una actividad</h1>
+    <p class="bajada">Reservá tu lugar en un turno de una hora. Las inscripciones abren 24 hs antes y cierran 15 minutos antes de cada turno.</p>
+
+    <form id="formulario" novalidate>
+      <section class="paso" aria-labelledby="t-dia">
+        <h2 id="t-dia"><span class="paso__n">1</span>Elegí el día</h2>
+        <div id="dias" class="dias" role="group" aria-label="Días"></div>
+        <p class="nota">Los días tachados todavía no abren inscripción o el parque está cerrado (lunes, 25/12 y 1/1).</p>
+      </section>
+
+      <section class="paso" id="paso-actividad" aria-labelledby="t-act" hidden>
+        <h2 id="t-act"><span class="paso__n">2</span>Elegí la actividad</h2>
+        <div id="actividades" class="actividades" role="group" aria-label="Actividades"></div>
+      </section>
+
+      <section class="paso" id="paso-horario" aria-labelledby="t-hor" hidden>
+        <h2 id="t-hor"><span class="paso__n">3</span>Elegí el horario</h2>
+        <div id="horarios" class="horarios" role="group" aria-label="Horarios"></div>
+      </section>
+
+      <section class="paso" id="paso-personas" aria-labelledby="t-per" hidden>
+        <h2 id="t-per"><span class="paso__n">4</span>Participantes</h2>
+        <div class="cantidad">
+          <span id="cantidad-etiqueta">Cantidad de personas</span>
+          <div class="cantidad__control" role="group" aria-labelledby="cantidad-etiqueta">
+            <button type="button" id="menos" aria-label="Quitar una persona">−</button>
+            <output id="cantidad" aria-live="polite">1</output>
+            <button type="button" id="mas" aria-label="Agregar una persona">+</button>
+          </div>
+          <span id="cupo-restante" class="nota"></span>
+        </div>
+        <div id="visitantes"></div>
+      </section>
+
+      <section class="paso" id="paso-terminos" aria-labelledby="t-ter" hidden>
+        <h2 id="t-ter"><span class="paso__n">5</span>Términos y condiciones</h2>
+        <p id="terminos-texto" class="terminos"></p>
+        <label class="aceptar">
+          <input type="checkbox" id="acepta">
+          <span id="acepta-texto">Acepto los términos y condiciones</span>
+        </label>
+      </section>
+
+      <div id="error" class="error" role="alert" hidden></div>
+
+      <button type="submit" id="enviar" class="principal" hidden>Inscribirme</button>
+    </form>
+  </main>
+
+  <dialog id="confirmacion" class="confirmacion" aria-labelledby="c-titulo">
+    <div class="confirmacion__mail" role="status">
+      <strong>Mail enviado a <span id="c-mail"></span></strong>
+      <span>Te enviamos el resumen y los QR de acceso.</span>
+    </div>
+    <h2 id="c-titulo">Inscripción confirmada</h2>
+    <p id="c-resumen" class="nota"></p>
+    <div id="c-entradas" class="entradas"></div>
+    <details class="mail">
+      <summary>Ver el mail enviado</summary>
+      <p class="mail__asunto" id="c-asunto"></p>
+      <pre id="c-cuerpo"></pre>
+    </details>
+    <button type="button" id="cerrar" class="principal">Hacer otra inscripción</button>
+  </dialog>
+
+  <script>window.TALLES = {{ talles | list | tojson }};</script>
+  <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>

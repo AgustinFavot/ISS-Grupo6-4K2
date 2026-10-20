@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" role="img" aria-label="EcoHarmony Park">
+  <circle cx="24" cy="24" r="23" fill="#f2e8cf"/>
+  <path d="M24 40c0-12 4-20 14-26-2 13-6 21-14 26z" fill="#6a994e"/>
+  <path d="M24 40c0-10-3-17-12-22 1 11 5 18 12 22z" fill="#a7c957"/>
+  <path d="M24 40V18" stroke="#386641" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="24" cy="13" r="4" fill="#bc4749"/>
+</svg>
