@@ -30,6 +30,10 @@ Centraliza todos los Ítems de Configuración (IC) producidos durante el cursado
 - Los cambios entran a `main` mediante Pull Request con revisión de otro integrante.
 - Las líneas base se marcan como tags de Git con formato `v[MAJOR].[MINOR]`.
 
+## Registro de integraciones
+
+Las ramas de trabajo pueden integrarse a `main` en una fecha posterior a la realización de su contenido. Por esta razón, la fecha del commit de integración indica cuándo se realizó el merge, mientras que los commits originales conservan la fecha en que se produjo el trabajo.
+
 ## Integrantes
 
 Ver `01_Administrativo/Integrantes.md` y `01_Administrativo/Roles.md`.
