@@ -26,6 +26,7 @@ Esta matriz relaciona cada IC con su estado actual en el repositorio y con los p
 | IC-13 | Minutas de TIG | ACT | `02_TP/TIG/TIG_[nro]_[Nombre]/Minutas/` | ⏳ Según avance de cada TIG |
 | IC-14 | Entregable TPG-4 | ENT | `02_TP/TPG/TPG_4_SCM-Herramientas-de-SCM/tp4_isw_4k2_grupo6.md` | ✅ Presente (formato md; PDF original pendiente) |
 | IC-14 | Entregable TPG-5 | ENT | `02_TP/TPG/TPG_5_SCM-Uso-de-Repositorio/tp5_isw_4k2_grupo6.pdf` | ⏳ En curso (entrega: 17/11/2026) |
+| IC-14 | Entregable TPG-9 | ENT | `02_TP/TPG/TPG_9_Testing/tp9_isw_4k2_grupo6_clases.xlsx` | ✅ Presente |
 | IC-15 | Anexos de TPG | ANX | `02_TP/TPG/TPG_[nro]_[Nombre]/` | ⏳ Según avance de cada TPG |
 | IC-16 | Minutas de TPG | ACT | `02_TP/TPG/TPG_[nro]_[Nombre]/Minutas/` | ⏳ Según avance de cada TPG |
 | IC-17 | Casos de estudio resueltos | MTR | `03_Material_Estudio/Casos_Estudio/` | ✅ Presente |
