@@ -20,7 +20,7 @@ Esta matriz relaciona cada IC con su estado actual en el repositorio y con los p
 | IC-08 | Listado de integrantes | ADM | `01_Administrativo/Integrantes.md` | ✅ Presente |
 | IC-09 | Roles del equipo | ADM | `01_Administrativo/Roles.md` | ✅ Presente |
 | IC-10 | Guía de TPs evaluables | MTR | `02_TP/GuiaTP_Evaluables.pdf` | ✅ Presente |
-| IC-11 | Entregable TIG-1 | ENT | `02_TP/TIG/TIG_1_Despliegue-de-Producto/ti1_isw_4k2_grupo6.pdf` | ⚠️ Pendiente de carga |
+| IC-11 | Entregable TIG-1 | ENT | `02_TP/TIG/TIG_1_Despliegue-de-Producto/ti1_isw_4k2_grupo6.pdf` | ✅ Presente |
 | IC-11 | Entregable TIG-2 | ENT | `02_TP/TIG/TIG_2_Frameworks-Lean-Agile/ti2_isw_4k2_grupo6.pdf` | ⚠️ Pendiente de carga |
 | IC-12 | Anexos de TIG | ANX | `02_TP/TIG/TIG_[nro]_[Nombre]/` | ⏳ Según avance de cada TIG |
 | IC-13 | Minutas de TIG | ACT | `02_TP/TIG/TIG_[nro]_[Nombre]/Minutas/` | ⏳ Según avance de cada TIG |
